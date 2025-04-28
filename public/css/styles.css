@@ -1,0 +1,297 @@
+/* Estilos para la barra lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9; /* Cambiado a un color claro */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 1px solid #ccc; /* Añadido un borde para separación */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333; /* Cambiado a un color oscuro para contraste */
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #000; /* Cambiado a un color más oscuro para hover */
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #333; /* Cambiado a un color oscuro */
+}
+
+/* Estilos para el usuario en la barra lateral */
+.header-container{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.sidebar-user .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar-user .username {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 16px;}
+}
+
+/* Estilos para la página de inicio de sesión */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Cambiado a un color azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambiado a un azul más oscuro para hover */
+}
+
+.login-container a {
+    display: block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los posts */
+.post {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.post small {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Estilos para el botón de agregar post */
+.add-post-button {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.add-post-button .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-post-button .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor para alinear usuario y botón */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de toggle comments */
+.toggle-comments-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.toggle-comments-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.toggle-comments-btn:active {
+    background-color: #003f7f;
+    transform: scale(0.95);
+}
+
+/* Contenedor para los botones de comentarios */
+.comments-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.add-comment-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    height: 34px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-comment-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.add-comment-btn:active {
+    background-color: #1e7e34;
+    transform: scale(0.95);
+}
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-icon svg {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-icon:hover svg {
+    transform: scale(1.1);
+}
+
+/* Estilos para la página Acerca De */
+.about-page {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    font-size: 28px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    margin-bottom: 15px;
+}
+
+.about-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-container ul li {
+    margin-bottom: 10px;
+}
+
